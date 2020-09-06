@@ -53,6 +53,6 @@ router.get('/', function *() {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 console.log('Worker started');
